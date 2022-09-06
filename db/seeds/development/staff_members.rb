@@ -34,8 +34,8 @@ given_names = %w{
     family_name_kana: fn[1],
     given_name_kana: gn[1],
     password: "password",
-    start_date: (100 - n).day.age.to_date,
+    start_date: (100 - n).day.ago.to_date,
     end_date: n == 0 ? Date.today : nil,
-    suspend: n == 1,
+    suspended: n == 1,
   )
 end
